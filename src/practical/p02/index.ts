@@ -4,7 +4,7 @@ interface Post {
     [key: string]: unknown;
   }
   
-  export function getPostsByUser(
+export function getPostsByUser(
     posts: Post[],
     userId: number
   ): Post[] {
