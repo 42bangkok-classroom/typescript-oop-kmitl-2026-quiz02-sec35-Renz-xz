@@ -1,7 +1,7 @@
 interface Post {
     userId: number;
-    products: unknown[];
-    [key: string]: unknown;
+    id: number;
+    title: string;
   }
   
 export function getPostsByUser(
@@ -10,4 +10,3 @@ export function getPostsByUser(
   ): Post[] {
     return posts.filter(post => post.userId === userId);
   }
-  
